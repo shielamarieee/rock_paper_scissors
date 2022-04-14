@@ -16,21 +16,21 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
    if (playerSelection === computerSelection) {
-      console.log(`It's a tie! you both picked ${playerSelection}`);
+      alert(`It's a tie! you both picked ${playerSelection}`);
       return "tie";
    } else if (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors"){
-      alert(`You sure about using ${playerSelection} on a game of "Rock, paper`)
+      alert(`You sure about using ${playerSelection} on a game of "Rock, Paper, Scissors"?`)
    } else if (playerSelection === "rock" && computerSelection === "scissors") {
-      console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+      alert(`You win this round! ${playerSelection} beats ${computerSelection}`);
       return "playerWin";
    } else if (playerSelection === "paper" && computerSelection === "rock") {
-      console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+      alert(`You win this round! ${playerSelection} beats ${computerSelection}`);
       return "playerWin";
    } else if (playerSelection === "scissors" && computerSelection === "paper") {
-      console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+      alert(`You win this! ${playerSelection} beats ${computerSelection}`);
       return "playerWin";
    } else {
-      console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+      alert(`You lose this round! ${computerSelection} beats ${playerSelection}`);
       return "botWin";
    }
 }
@@ -64,12 +64,12 @@ function game() {
       gameWinner = 'Draw';
    }
 
-   console.log(`Player: ${playerScore} | Bot: ${botScore}`);
+   alert(`Player: ${playerScore}  |  Bot: ${botScore}`);
 
    if (gameWinner === 'Draw') {
-      console.log("There is no match winner, draw!");
+      alert("There is no match winner, draw!");
    } else {
-      console.log(`${gameWinner}`);
+      alert(`${gameWinner}`);
    }
 }
 
