@@ -4,31 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RPS UI</title>
+  <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-  <div class="header">
-    <h1 class="roundNumber">First to get 5 points, wins</h1>
-    <div class="scores">
-      <h5 class="playerScore">Player Score: <span class="scoreLeft">0</span></h5>
-      <h5 class="computerScore">Computer Score: <span class="scoreRight">0</span></h5>
+    <div class="score-board">
+      <div class="player-score">
+        <h2>Player:</h2>
+        <p class="player-current">0</p>
+      </div>
+      <div class="computer-score">
+        <h2>Computer:</h2>
+        <p class="computer-current">0</p>
+      </div>
+    </div>
+
+    <div class="first-page">
+      <h1>Rock Paper Scissors</h1>
+      <p>First to get 5 points, wins</p>
+      <input type="button" class="start" value="Start Game">
+    </div>
+
+    <div class="game">
+      <h2 class="game-result">Choose your pick</h2>
+      <div class="hands">
+        <img class="player-hand" src="./images/human_rock.png" alt="">
+        <img class="computer-hand" src="./images/robot_rock.png" alt="">
+      </div>
+      <div class="buttons">
+        <button class="rock">rock</button>
+        <button class="paper">paper</button>
+        <button class="scissors">scissors</button>
+      </div>
     </div>
   </div>
-
-  <div class="images">
-      <img class="playerHand" src="./images/human_rock.png" alt="human_rock">
-      <img class="computerHand" src="./images/robot_rock.png" alt="robot_rock">
-  </div>
-
-  <div class="buttons">
-    <button class="rock">Rock</button>
-    <button class="paper">Paper</button>
-    <button class="scissors">Scissors</button>
-  </div>
-  </div>
-
   <script src="rps-ui.js"></script>
 </body>
 </html>
