@@ -30,9 +30,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
-  display: none;
-
+  transition: opacity 0.5s ease;
 }
 .first-page h1 {
   font-size: 50px;
